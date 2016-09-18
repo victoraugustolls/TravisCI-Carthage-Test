@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "0ac38d7e312e87aeea608d384e44401f3d8a6b3d"
+github "delba/JASON" "v2.2.1"
+github "kishikawakatsumi/KeychainAccess" "v3.0.0"
+github "mxcl/PromiseKit" "4.0.2"

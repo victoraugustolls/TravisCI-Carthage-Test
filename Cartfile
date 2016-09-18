@@ -1,0 +1,12 @@
+
+#Alamofire
+github "Alamofire/Alamofire" "master"
+
+#JASON
+github "delba/JASON" >= 2.2
+
+#Keychain Access
+github "kishikawakatsumi/KeychainAccess"
+
+#PromisseKit
+github "mxcl/PromiseKit" ~> 4.0
