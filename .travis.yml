@@ -1,5 +1,7 @@
 language: objective-c
 xcode_project: TravisCI/TravisCI.xcodeproj # path to your xcodeproj folder
 xcode_scheme: TravisCI
+script:
+  - xcodebuild [DEFAULT_OPTIONS] CODE_SIGNING_REQUIRED=NO
 install:
    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
