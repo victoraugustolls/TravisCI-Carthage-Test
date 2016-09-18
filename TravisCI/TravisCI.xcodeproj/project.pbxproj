@@ -47,6 +47,7 @@
 		946C46241D8E187200B8727F /* TravisCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		946C46281D8E187200B8727F /* TravisCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisCIUITests.swift; sourceTree = "<group>"; };
 		946C462A1D8E187200B8727F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		946C46361D8E289D00B8727F /* TravisCI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TravisCI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		946C46071D8E187200B8727F /* TravisCI */ = {
 			isa = PBXGroup;
 			children = (
+				946C46361D8E289D00B8727F /* TravisCI.entitlements */,
 				946C46081D8E187200B8727F /* AppDelegate.swift */,
 				946C460A1D8E187200B8727F /* ViewController.swift */,
 				946C460C1D8E187200B8727F /* Main.storyboard */,
@@ -193,7 +195,13 @@
 				TargetAttributes = {
 					946C46041D8E187200B8727F = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = H8UTHN35FS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					946C46181D8E187200B8727F = {
 						CreatedOnToolsVersion = 8.0;
@@ -412,7 +420,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = TravisCI/TravisCI.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H8UTHN35FS;
 				INFOPLIST_FILE = TravisCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tutorial.TravisCI;
@@ -425,7 +435,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = TravisCI/TravisCI.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H8UTHN35FS;
 				INFOPLIST_FILE = TravisCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tutorial.TravisCI;
