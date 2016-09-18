@@ -3,7 +3,8 @@ cache: bundler
 xcode_project: TravisCI/TravisCI.xcodeproj # path to your xcodeproj folder
 xcode_scheme: TravisCI
 osx_image: xcode8
-xctool -workspace cam-pro.xcworkspace -scheme cam-beta clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+xctool:
+    -workspace cam-pro.xcworkspace -scheme cam-beta clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 # script:
 #   - xcodebuild CODE_SIGNING_REQUIRED=NO
 install:
